@@ -1,0 +1,31 @@
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    max-width: 350px;
+}
+
+.btn-azul{
+    color: var(--dark-color);
+    background-color: var(--blue-color);
+    border: 2px solid var(--blue-color);;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 7px;
+    margin-right: 5px;
+}
+
+.btn-morado{
+    color: var(--purple-color);
+    background-color: var(--white-color);
+    border: 2px solid var(--purple-color);;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 7px;
+    margin-right: 5px;
+}
