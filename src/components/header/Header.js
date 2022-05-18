@@ -1,19 +1,29 @@
-import './Header.css'
-import Logo from './logo.png'
+import './Header.css';
+import logo from './img/logo.png';
+function Header() {
+    return (
+        <header class="header">
+            <nav>
+                <div class="nav_logo-text">
+                    <img src={logo} alt="" class="logo-nav"/>
+                        <p class="text-logo-header">Mil <br/> huellitas</p>
+                </div>
 
-function Header(){
- return(
-    /*Características del componente*/
-    <header>
-        <div class="logo">
-            <img src={Logo}></img>
-        </div>
-        <div>
-            <button class="btn-azul"><i></i>Ingresar</button>
-            <button class="btn-morado"><i></i>Registrar</button>
-        </div>
-    </header>
- );
+                <input type="checkbox" id="check"/>
+                    <label for="check" class="bar-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+
+                    <ul class="nav_menu-items">
+                        <li><a href="#">INICIO</a></li>
+                        <li><a href="#">ADOPCIÓN</a></li>
+                        <li><a href="#">DONACIÓN</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">ALIADOS</a></li>
+                    </ul>
+            </nav>
+        </header>
+    )
 }
 
-export default Header;
+export default Header

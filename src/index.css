@@ -1,30 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Aleo:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --blue-dark-color: #1B3C5A;
+    --blue-medium-color: #2970CA;
+    --blue-light: #D5E3FF;
+    --green-light-color: #C4EDB2;
+    --coral-color: #FAC0BD;
+    --dark-color: #191919;
+    --white-color: #FFFFFF;
+    --aleo-font: "Aleo", serif;
+    --poppins-font: "Poppins", sans-serif;
+    --Degrade-nav-menu-color: linear-gradient(180deg, rgba(7, 36, 62, 0.9) 32.33%, rgba(42, 95, 145, 0.9) 92.71%);
+}
+
 *{
   margin: 0;
-  border:0;
   padding: 0;
-  box-sizing: border-box; 
-
+  box-sizing: border-box;
+  font-family: var(--poppins-font);
 }
 
-:root{
-    --dark-color: #000000;
-    --white-color: #FFFFFF;
-    --purple-color: #752995;
-    --blue-color:#00B2B1;
-}
-
-
-body{
-  color: var(--dark-color);
-  font-family: 'Roboto', sans-serif;
-}
-
-p{
-  text-align: justify;
-}
-
-.contenedor{
-  max-width: 100%;
-  width: 100%;
-}
