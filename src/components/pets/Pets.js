@@ -1,11 +1,36 @@
 import { getAllPets } from "../../js/pets.js";
 import { Link } from "react-router-dom";
+import Line_dashed from './img/line.svg';
 import './Pets.css'
 
 function Pets(){
     const pets = getAllPets(); 
     return (
-        <div className="container-all">
+        <section className="adoption-container">
+
+        <div className="adoption">
+            <h1>Peluditos Mil Huellitas</h1>
+            <p>Nos alegra saber que estas pensando en adoptar, todos nuestros peludos están a la espera de una familia y son entregados en óptimas condiciones de salud y belleza a adoptantes responsables y amorosos</p>
+        </div>
+
+        <div className="line-dashed">
+            <img src={Line_dashed} alt="Linea punteada"></img>
+        </div>
+
+        <div className="filter-buttons">
+            <input type="radio" name="filtro" id="todos" checked/>
+            <label class="label-todos" for="todos">Todos</label>
+
+            <input type="radio" name="filtro" id="perros"/>
+            <label class="label-dog" for="perros">Perros</label>
+            
+            <input type="radio" name="filtro" id="gatos"/>
+            <label class="label-cat" for="gatos">Gatos</label>
+        </div>
+
+        <div className="line-dashed">
+            <img src={Line_dashed} alt="Linea punteada"></img>
+        </div>
 
             <div className="adoption-galery">
                 {pets.map(pet=> 
@@ -28,7 +53,12 @@ function Pets(){
                 )}
                 
             </div>
-        </div> 
+
+            <div className="controller">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <i class="fa-solid fa-circle-arrow-right"></i>
+            </div>
+        </section> 
 
     );
 }

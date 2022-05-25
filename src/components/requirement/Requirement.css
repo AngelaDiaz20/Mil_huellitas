@@ -1,0 +1,70 @@
+#adoption-requirement{
+    padding: 15px 20px;
+    text-align: justify;
+}
+
+#adoption-requirement h1{
+    margin: 15px 0;
+    text-align: center;
+}
+
+.img-hero img{
+    width: 100%;
+    margin: 10px 0;
+}
+
+.list-requirement{
+    background: url(./img/huella-rosa.svg) no-repeat;
+    background-size: cover;
+    margin: 0 -20px -20px;
+    padding: 10px 20px 20px;
+}
+
+.list-requirement ul{
+    text-align: left;
+    padding-left: 40px;
+    list-style-image: url(./img/item-huella.svg);
+}
+
+@media (min-width: 768px) {
+    .img-hero img{
+        width: 40%;
+        float: left;
+        margin: 10px 42px 0 0;
+    }
+
+    .list-requirement{
+        background:none;
+    }
+
+    #adoption-requirement{
+        padding: 20px 30px 30px;
+        background-size: cover;
+    }
+
+    #adoption-requirement img{
+        min-width: 400px;
+        margin: 27px 55px 20px 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #adoption-requirement p, .list-requirement{
+        padding: 10px 60px;
+        text-align: justify;
+    }
+
+    #adoption-requirement img{
+       margin: 20px 70px;
+    }
+
+    .img-hero img{
+        width: 40%;
+        float: left;
+        margin: 10px 42px 0 0;
+    }
+
+    .list-requirement{
+        background-position: right;
+    }
+}

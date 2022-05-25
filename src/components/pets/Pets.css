@@ -1,4 +1,21 @@
+.adoption{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.adoption h1{
+    margin:12px 0;
+    font-size: 30px;
+}
+
+.adoption p{
+    margin: 20px;
+    text-align: justify;
+}
+
 .adoption-galery{
+    overflow-x: hidden;
     margin-top: 20px;
     display: grid;
     row-gap: 15px;
@@ -22,6 +39,7 @@
     background-color: #ffffff98;
     backdrop-filter: blur(4px);
     animation: pet-aparecer 600ms;
+    transition-duration: 100ms;
 }
 
 .adoption-galery__pet img{
@@ -115,10 +133,84 @@
 }
 
 
+/*Checked*/
+
+.filter-buttons{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 90%;
+}
+
+.line-dashed{
+    margin: auto;
+    width: 95%;
+    overflow: hidden;
+    margin-bottom: 6px;
+}
+
+.adoption-container label{
+    background-color: var(--blue-medium-color);
+    color: var(--white-color);
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.adoption-container label:hover{
+    box-shadow: 1px 1px 3px var(--dark-color);
+    background-color: #8caef1;
+    color: black;
+}
+
+#perros:checked ~ .adoption-galery .cat{
+    display: none;
+}
+
+#perros:checked ~ .label-dog{
+    background-color: #1B3C5A;
+    color: white;
+}
+
+#gatos:checked ~ .label-cat{
+    background-color: #1B3C5A;
+    color: white;
+}
+
+#todos:checked ~ .label-todos{
+    background-color: #1B3C5A;
+    color: white;
+}
+
+#gatos:checked ~ .adoption-galery .dog{
+    display: none;
+}
+
+input[type=radio]{
+    display: none;
+}
+
+
+.controller{
+    margin-top: 15px;
+    font-size: 45px;
+    color: var(--blue-dark-color);
+    display: flex;
+    justify-content: space-around;
+}
+
 @media screen and (min-width: 768px){
 
-
     /*Adopción-----------------------*/
+
+    .filter-buttons{
+        justify-content: space-around;
+        width: 80%;
+    }
+
+    .adoption-container label{
+        padding: 5px 40px;
+    }
 
     .adoption-galery{
         row-gap: 15px;
@@ -133,11 +225,25 @@
         margin: auto;
         height: 270px;
     }
+
+    .controller{
+        display: none;
+    }
  }
  
  @media screen and (min-width: 1024px){
 
     /*Adopción*/
+
+    .adoption p{
+        margin: 10px 60px;
+        text-align: center;
+        padding: 0 40px;
+    }
+
+    .adoption h1{
+        font-size: 40px;
+    }
 
     .adoption-galery{
         padding: 0 80px;
@@ -155,6 +261,10 @@
         width: 90%;
         margin: auto;
         height: 300px;
+    }
+
+    .adoption-galery__image{
+        margin-top: -30px;
     }
 
  }
