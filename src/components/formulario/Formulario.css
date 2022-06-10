@@ -1,0 +1,377 @@
+#main-adoption-form{
+    width: 100%;
+    padding: 8px;
+}
+
+#main-adoption-form #adoption-banner{
+    background-color: #09ff00;
+}
+
+#adoption-form{
+    margin-top:-95px;
+    border: 3px solid var(--blue-light); 
+    padding: 10px;
+    width: 100%;
+}
+
+#adoption-form textarea, #home{
+    width: 100%;
+    background-color: var(--blue-light);
+    border: 1.4px solid #8caef1;
+}
+
+
+#adoption-form table{
+    width: 100%;
+}
+
+#adoption-form table tr{
+    background-color:var(--blue-light);
+    border-left: none;
+}
+
+#adoption-form table thead tr{
+    background-color:var(--white-color);
+    border-left: none;
+}
+
+#adoption-form table td{
+    padding: 5px 5px;
+    text-align: center;
+}
+
+#adoption-form table th{
+    padding: 5px 5px 5px 10px;
+    text-align: left;
+}
+
+#adoption-form p{
+    width: 100%;
+}
+
+textarea{
+    margin-top: 10px;
+}
+
+.adoption-form-group{
+    width: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.adoption-form-group div{
+    display: flex;
+    align-items: center;
+}
+
+.question-form{
+    margin: 25px 0;  
+}
+
+#adoption-form #persons{
+    background-color: var(--blue-light);
+    border: 1.4px solid #8caef1;
+    width: 30px;
+    margin: 0 20px;
+}
+
+#adoption-form #locate{
+    background-color: var(--blue-light);
+    border: 1.4px solid #8caef1;
+    margin-left: 20px;
+}
+
+#adoption-form .label-form{
+    margin: 1px 5px;
+}
+
+#adoption-form #locate:focus, #adoption-form textarea:focus, #adoption-form input:focus{
+    border: 2px solid #296fca;
+    outline: none;
+    box-shadow: 1px 1px 4px var(--blue-medium-color);
+}
+
+.user-information .form-group{
+    margin-bottom: 10px;
+}
+
+.dog-form{
+    display: flex;
+    margin: auto;
+}
+
+.user-information{
+    margin: 30px 0;
+}
+
+.article-form{
+    margin: 28px 0;
+}
+
+.modalPicture img{
+    width: 150px;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #8caef165;
+    display: flex;
+    z-index: 40;
+    --opacity:0;
+    --pointer:none;
+
+    opacity:var(--opacity);
+
+    pointer-events: var(--pointer);
+    transition: opacity 0.5s;
+}
+
+.modal:target .modalContainer{
+    animation: show 1s 0.5s backwards;
+}
+
+@keyframes show{
+    0%{
+        transform: translateY(-150vh);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.modal:target{
+    --opacity:1;
+    --pointer:unset;
+}
+
+.modalContainer{
+    margin: 140px auto 40px;
+    background-color: white;
+    width: 90%;
+    max-width: 600px;
+    max-height: 80%;
+    overflow-x: scroll;
+    scroll-snap-type: y mandatory;
+    text-align: center;
+    padding: 2.5em 1.5em;
+    border-radius:1em ;
+    border:3px solid var(--blue-medium-color);
+}
+
+.modal:target .modalPicture{
+    animation: scale 0.5s 1s backwards;
+}
+
+@keyframes scale{
+    0%{
+        transform: scale(0);
+    }
+}
+
+.modalTitle--bold{
+    font-weight: 800;
+}
+
+.modal:target .modalTitle{
+    animation: aparecer 0.6s 1s backwards;
+}
+
+.modal:target .modalTitle--bold{
+    animation: aparecer 1s 1s backwards;
+}
+
+.modalul{
+    text-align: justify;
+    padding: 40px 40px 20px;
+}
+
+.modalP{
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.modalP p{
+    text-align: center
+}
+
+.modal:target .modalP{
+    animation: aparecer 1.2s 1s backwards;
+}
+
+.modalP{
+    background-color: #8caef151;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0.2;
+        margin-top: 100%;
+      }
+    
+      100% {
+        margin-left: 0%;
+      }
+}
+
+.modalClose{
+    display: inline-block;
+    border: 1px solid rgba(32, 16, 114, 0.519);
+    padding: 15px;
+    text-decoration: none;
+    font-weight:700;
+    color: white;
+    background: var(--blue-medium-color);
+    border-radius: 0.4em;
+}
+
+#adoption-kirara .modalContainer, #modal-two .modalContainer{
+    margin: 140px auto 40px;
+    background-size:80%;
+    background-position: center;
+    width: 90%;
+    scroll-snap-type: none;
+    overflow-x: hidden;
+    max-width: 700px;
+    max-height: 70%;
+    padding: 2.5em 1.5em;
+    border-radius:1em;
+    border:3px solid var(--blue-medium-color);
+    box-shadow: 2px 2px 6px #191919c0;
+}
+
+#adoption-kirara .modal:target .modalContainer, .modal-two:target .modalContainer{
+    animation: show 1s 0.5s backwards;
+}
+
+#adoption-kirara figure, #modal-two figure{
+    background-position: center;
+    background-size: 120px;
+}
+
+@media screen and (min-width: 768px){
+    
+    /*formulary----------------*/
+    
+    #main-adoption-form{
+        width: 100%;
+        padding: 20px 10.9%;
+        background: url(../pets/img/bg-bolitas.svg);
+    }
+
+    #adoption-form{
+        padding: 20px 28px;
+        background-color: var(--white-color);
+        box-shadow: 2px 2px 6px #1919198f, -2px -2px 8px #1919198f;
+    }
+
+    .question-form{
+        margin: 34px 0;  
+    }
+
+    #adoption-form p{
+        margin-bottom: 7px;
+    }
+
+    #adoption-form #locate, #adoption-form input{
+        font-size: 15px;
+    }
+
+    .user-information{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 40px 0;
+    }
+
+    .user-information .form-group{
+        width: 48%;
+        margin-bottom: 10px;
+    }
+
+    .dog-form{
+        float: left;
+        height: 200px;
+        margin: 0 15px;
+    }
+
+    .article-form{
+        margin-top: 40px;
+    }
+
+ }
+ 
+ @media screen and (min-width: 1024px){
+
+    /*Formulary------------------*/
+    #main-adoption-form{
+        width: 100%;
+        padding: 20px 18%;
+        background: url(../pets/img/bg-bolitas.svg);
+    }
+
+    #adoption-form{
+        padding: 25px 35px;
+        background-color: var(--white-color);
+        box-shadow: 2px 2px 6px #1919198f, -2px -2px 8px #1919198f;
+    }
+
+    .question-form{
+        margin: 40px 0;  
+    }
+
+    #adoption-form p{
+        margin-bottom: 10px;
+    }
+
+    #adoption-form #locate, #adoption-form input{
+        font-size: 15px;
+    }
+
+    .dog-form{
+        height: 250px;
+        margin: 0 15px;
+    }
+
+    .article-form{
+        margin: 40px 0;
+    }
+
+    .ocult{
+        text-align: center;
+    }
+
+    #adoption-process{
+        margin-top: 40px;
+    }
+
+}
+ 
+ @media screen and (min-width: 1200px){
+
+    #adoption-form #locate, #adoption-form input{
+        font-size: 17px;
+    }
+
+    .dog-form{
+        height: 300px;
+        margin: 0 15px;
+    }
+
+    .article-form{
+        margin: 40px 0;
+    }
+
+    #container-galery label{
+        padding: 5px 60px;
+    }
+
+    .info-pte{
+        padding: 0 10%;
+    }
+
+ }

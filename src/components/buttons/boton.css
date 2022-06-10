@@ -1,0 +1,78 @@
+.botonc{
+    height: 40px;
+    z-index: 3;
+    width: 200px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.btn-container{
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    flex-direction: row-reverse;
+}
+
+.fa-paper-plane{
+    background-color: var(--blue-dark-color);
+    border: 5px solid var(--blue-light);
+    border-radius: 50%;
+    height: 50px;
+    display: flex;
+    z-index: 3;
+    margin-right:-30px;
+    padding: 10px 10px 0 6px;
+    color: aliceblue;
+}
+
+.la_a{
+    z-index: 2;
+}
+
+.btn_pago{
+    background-color: var(--blue-dark-color);
+    border: 5px solid var(--blue-light);
+    color: var(--white-color);
+    font-family: var(--aleo-font);
+    height: 50px;
+    width: 100%;
+    z-index: 2;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 36px;
+    text-align:center;
+    border-radius:10px;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.btn-container:hover .btn_pago, .btn-container:hover .huella_btn{
+    background-color: var(--blue-medium-color);
+}
+
+.plan{
+    color: var(--blue-dark-color);
+    text-decoration: none;
+    font-family:'Open Sans';
+    z-index:1;
+}
+
+.plan:hover{
+    text-decoration:underline;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+    .botonc{
+        height: 50px;
+        z-index: 3;
+        width: 40%;
+        z-index: 0;
+        margin:auto;
+        text-align: center;
+    }
+
+    .btn_pago{
+        font-size: 20px;
+    }
+}

@@ -26,9 +26,10 @@ body{
   overflow-x: hidden;
 }
 
-h1{
+h1, h2{
   font-family: 'Aleo', serif;
   color: var(--blue-medium-color);
+  text-align: center;
 }
 
 

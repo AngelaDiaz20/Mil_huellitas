@@ -1,0 +1,51 @@
+.bton-dog img{
+    height: 85px;
+    margin-top: -30px;
+    margin-right: -18px;
+}
+
+.bton-cat, .bton-dog{
+    background-color:var(--blue-dark-color);
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.bton-cat img{
+    height: 85px;
+    margin-top: -8px;
+}
+
+#peludito a{
+    text-decoration: none;
+}
+
+.bton-cat:hover, .bton-dog:hover{
+    background-color: var(--blue-dark-color);
+    box-shadow: 4px 4px 7px var(--dark-color);
+    transform: translateY(2px);
+    transition-duration: 0.5s;
+}
+
+.bton-cat:hover img, .bton-dog:hover img{
+    transition-duration: 0.5s;
+    transform: scale(1.1);
+}
+
+.bton-cat, .bton-dog{
+    display: flex;
+    margin: auto;
+    width: 300px;
+    height: 60px;
+    font-size: 20px;
+    font-family: 'Aleo', serif;
+    border-radius: 0;
+    box-shadow: 2px 2px 4px var(--dark-color);
+}
+
+.bton-dog img{
+    height: 85px;
+    margin-top: -30px;
+    margin-right: -18px;
+}

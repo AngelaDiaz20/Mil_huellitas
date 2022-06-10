@@ -22,6 +22,19 @@ let pets=[
         age:"6 meses",
         size:"mediano",
         image:<img src={Kirara} alt="Imagen de Kirara" className='pet-image'></img>,
+        category:"Gato",
+        history:"Tengo 6 meses apróximadamente, provengo de un basurero ubicado en el sector de San Cristobal, fui abandonada junto con otros dos gatitos poco tiempo después de haber nacido, la calle representa un peligro inminente para mí. Es por eso que una mano amiga me acogió y ahora estoy en Mil Huellitas. <br/> Estoy buscando un hogar, tengo mucho amor para ofrecer y espero encontrar a alguien que me comprenda y me ayude a confiar nuevamente en los demás.",
+        photo1: "https://i.postimg.cc/TYG8zMc3/Kirara1.png",
+        photo2: "https://i.postimg.cc/Pr4Gh36z/Kirara2.png",
+        photo3: "https://i.postimg.cc/VkLxNqpy/Kirara3.png",
+        gender: "Hembra",
+        sterilization:"Si",
+        deworming:"Si",
+        color:"Blanco, negro y café",
+        teeth:"Dentadura permanente, completos, mordida en tijera",
+        eyes:"Ovales, color azul claro",
+        weight:"25 lbs",
+        observations:"Es muy juguetona"
     },
 
     {
