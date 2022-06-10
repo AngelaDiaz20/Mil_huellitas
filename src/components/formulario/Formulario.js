@@ -1,5 +1,7 @@
 /*import { Link } from 'react-router-dom';*/
 import './Formulario.css';
+import Boton from '../buttons/Boton';
+import { Link } from 'react-router-dom';
 
 function Formulario() {
     
@@ -202,10 +204,7 @@ function Formulario() {
                 <label for="observaciones"></label>
                 <textarea rows="5" cols="30" name="observaciones"></textarea></div>
 
-                <div class="btn-enviar">
-                    <i class="fa-solid fa-paper-plane"></i>
-                    <a href="datos-adoptante.html"><button>Enviar datos</button></a>
-                </div>
+                <Link to="/form-adoptantes"><Boton /></Link>
 
                 </section>
             </main>

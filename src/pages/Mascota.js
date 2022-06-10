@@ -1,5 +1,6 @@
 import { getPet } from "../js/pets";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
 import '../css/Mascota.css'
@@ -129,7 +130,11 @@ function toggleCare(e){
                 <h2 class="subtitle">Paso 1</h2>
                 <img src={Huella} alt=""/>
 
-                <Boton />
+                <Link to="/formulario" className="la_a">
+                <div className='btn-container'>
+                    <button className='btn_pago'> Llenar formulario </button>
+                    <i class="fa-solid fa-paper-plane"></i>
+                </div></Link>
                 <a href="https://drive.google.com/file/d/1U5FpQ_L3SDP6QixE57KnE4UdmpGJw4xg/view" target="blank"> O haz click aquí para descargarlo </a>
             </div>
 
@@ -171,7 +176,10 @@ function toggleCare(e){
             </form>     
             </div>
 
-            <Boton/>
+            <div className='btn-container'>
+                    <button className='btn_pago'> Enviar </button>
+                    <i class="fa-solid fa-paper-plane"></i>
+            </div>
 
             </article> 
             </div> 

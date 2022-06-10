@@ -515,8 +515,10 @@
         padding: 5px 18px 5px 22px;
     }
 
-    .step1 .btn-enviar i{
-        padding: 6px 4px 4px 8px;
+    .step1 .btn-container, .process-step2 .btn-container{
+        margin: auto;
+        width: 300px;
+        text-align: center;
     }
     
     .step1{
@@ -528,13 +530,6 @@
         margin: 0 0 0 18px;
     }
 
-    .process-step2 button{
-        padding: 5px 40px;
-    }
-
-    .process-step2 i{
-        padding: 6px 8px 4px 4px;
-    }
  }
  
  @media screen and (min-width: 1024px){

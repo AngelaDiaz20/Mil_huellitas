@@ -3,7 +3,7 @@ import {ContainerForm,Formulario,Label,ContenedorTerminos,ContenedorBotonCentrad
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExclamationTriangle} from '@fortawesome/free-solid-svg-icons';
 import Input from './Input';
-import Radio from './Radio'
+//import Radio from './Radio'
 import DogForm from '../../assets/img/dog-form.svg'
 
 const FormAdoptantes =()=>{
@@ -175,7 +175,6 @@ const onSubmit = (e) => {
 				<img src={DogForm} alt='Imagen de perrito'/>
 				<p><strong>Para tener en cuenta</strong><br/> Cuando se cambia a un animal de ambiente, en ocasiones pueden presentarse síntomas como diarrea, inapetencia, falta de energía o incluso puede presentar patologías que se encontraban imperceptibles en un entorno habitual y controlado; dichas situaciones pueden explicarse como una respuesta fisiológica al cambio de hábitat.</p>
 
-				<Radio/>
 
       <ContenedorTerminos>
       <Label>
