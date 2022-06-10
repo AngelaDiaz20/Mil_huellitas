@@ -7,7 +7,9 @@ import Huella from '../assets/img/huella.svg'
 import Buttoncat from "../components/buttons/ButtonCat";
 import Boton from "../components/buttons/Boton";
 import BtnGato  from "../components/buttons/btongato.svg";
-import BtnPerro from "../assets/img/dog-bton.svg"
+import BtnPerro from "../assets/img/dog-bton.svg";
+import BtnDog from "../assets/img/Perro.png";
+import BtnCat from "../assets/img/Gato.png";
 
 function Mascota(){
     const params = useParams();
@@ -108,9 +110,14 @@ function toggleCare(e){
                     
                         </div></div>
 
-                        <Buttoncat/>
+                        <div className="cat-bton btn__pets">
+                            <button className="bton-cat"> 
+                            <img src={BtnDog} alt="Imagen de botón de gato"></img>
+                            Sigue mirando más peluditos
+                            <img src={BtnCat} alt="Imagen de botón de gato"></img>
+                        </button></div>
 
-                        <section id="adoption-process">
+            <section id="adoption-process">
            
             <h2 class="ocult">Inicia el proceso de adopción</h2>     
 

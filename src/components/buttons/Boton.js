@@ -6,7 +6,7 @@ function Boton() {
 
         <div className='btn-container'>
             <button className='btn_pago'> Enviar datos </button>
-            <a className="la_a" href='/src/pages/donacion/Cachorro.js'><i class="fa-solid fa-paper-plane"></i></a>
+            <a className="la_a" href='/formulario'><i class="fa-solid fa-paper-plane"></i></a>
         </div>
    
     </section>

@@ -1,10 +1,14 @@
 import { getAllPets } from "../../js/pets.js";
 import { Link } from "react-router-dom";
+//import { Ocult } from "../../elements/Formularios.js";
 import Line_dashed from './img/line.svg';
 import './Pets.css'
 
+
+
 function Pets(){
     const pets = getAllPets(); 
+
     return (
         <section className="adoption-container">
 
@@ -33,20 +37,20 @@ function Pets(){
         </div>
 
             <div className="adoption-galery">
-                {pets.map(pet=> 
-                    <div key={pet.id} className="adoption-galery__pet"><br/>
+                {pets.map(pett=> 
+                    <div key={pett.id} className="adoption-galery__pet"><br/>
 
                         <div className="adoption-galery__image">
-                            {pet.image}
+                            {pett.image}
                             <div className="adoption-galery__layer">
-                                <Link to={`${pet.id}`} className="link">¡Cónoce su historia!</Link>
+                                <Link to={`${pett.id}`} className="link">¡Cónoce su historia!</Link>
                             </div>
                         </div>
                         
                         <div className="adoption-galery__information">
-                            <p className="information pet__name">Nombre: {pet.name} </p>
-                            <p className="information pet__age">Edad: {pet.age}</p>
-                            <p className="information pet__size">Tamaño: {pet.size}</p>
+                            <p className="information pet__name">Nombre: {pett.name} </p>
+                            <p className="information pet__age">Edad: {pett.age}</p>
+                            <p className="information pet__size">Tamaño: {pett.size}</p>
                         </div>
                         
                     </div> 
@@ -58,6 +62,7 @@ function Pets(){
                     <i class="fa-solid fa-circle-arrow-left"></i>
                     <i class="fa-solid fa-circle-arrow-right"></i>
             </div>
+            
         </section> 
 
     );

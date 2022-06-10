@@ -163,6 +163,12 @@ const MensajeError = styled.div`
 	}
 `;
 
+
+const Ocult = styled.div`
+	display:none;
+`;
+
+
 export {
 	ContainerForm,
 	Formulario,
@@ -175,5 +181,6 @@ export {
 	ContenedorBotonCentrado,
 	Boton,
 	MensajeExito,
-	MensajeError
+	MensajeError,
+	Ocult
 };
